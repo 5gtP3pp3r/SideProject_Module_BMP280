@@ -11,7 +11,7 @@ BMP280Sensor::BMP280Sensor()
         if (!m_BMP280.begin(BMP_ADD)) {                     // Simple vérification affiché dans le port série. A servi à détecter que je n'avais pas un BME mais un BMP.
             Serial.println("Incapable de démarrer le capteur BME280. Vérifiez l'adresse et le câblage.");
             while(true);                                    // La librairie de ADXL345 m'a montré que c'est une manière de créer une boucle infinie pour arrèter le programme sans cracher mais boucle dans le vide à l'infinie.
-        } else {
+        } else {                                            // Sera utilisé dans tout les objets, à la mise en route de l'esp32 avant le lancement. On pourrait utiliser le LCD. Si problème d'un objet, on connaitra la cause.
             Serial.println("Capteur BME280 initialisé avec succès.");
         }                          
     }               
