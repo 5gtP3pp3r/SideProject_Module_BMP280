@@ -1,6 +1,6 @@
 #pragma once
 #include <Arduino.h>
-#include "Sensors/BMP280Sensor.h"
+#include "Modules/BMP280Sensor.h"
 
 class Program {
 private:

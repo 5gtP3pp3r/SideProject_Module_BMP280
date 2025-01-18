@@ -1,4 +1,4 @@
-#include "Sensors/BMP280Sensor.h"
+#include "Modules/BMP280Sensor.h"
 
 BMP280Sensor::BMP280Sensor()
   : m_temperature(DEFAULT_ZERO_F),
