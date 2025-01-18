@@ -8,12 +8,6 @@ private:
     String m_temperature;
     String m_altitude;
     String m_presure;
-    //String m_humidity;
-
-    String m_lastTemperature;
-    String m_lastAltitude;
-    String m_lastPresure;
-    //String m_lastHumidity;
 
     uint64_t m_lastReadTime;
     uint16_t m_interval;
