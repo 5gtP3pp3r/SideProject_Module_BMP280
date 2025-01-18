@@ -1,5 +1,7 @@
 #include "Modules/BMP280Sensor.h"
 
+// Source utilisation et méthodes librairie: adafruit/Adafruit BMP280 Library@^2.6.8 depuis "PIO Home/Librairies". 
+
 BMP280Sensor::BMP280Sensor()
   : m_temperature(DEFAULT_ZERO_F),
     m_altitude(DEFAULT_ZERO_F),                             // Pour afficher un altitude réel depuis le sol du lancement, devra créer une classe pour le clacul. 
