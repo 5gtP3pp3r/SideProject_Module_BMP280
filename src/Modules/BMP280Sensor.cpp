@@ -12,6 +12,7 @@ BMP280Sensor::BMP280Sensor()
             Serial.println("Incapable de démarrer le capteur BME280. Vérifiez l'adresse et le câblage.");
             while(true);                                    // La librairie de ADXL345 m'a montré que c'est une manière de créer une boucle infinie pour arrèter le programme sans cracher mais boucle dans le vide à l'infinie.
         } else {                                            // Sera utilisé dans tout les objets, à la mise en route de l'esp32 avant le lancement. On pourrait utiliser le LCD. Si problème d'un objet, on connaitra la cause.
+                                                            // Au lieu d'un Serial.println() dans le port série COM4, puisque l'esp32 ne sera pas physiquement connecté, on aurait les infos sur le LCD placé sur la fusée. 
             Serial.println("Capteur BME280 initialisé avec succès.");
         }                          
     }               
