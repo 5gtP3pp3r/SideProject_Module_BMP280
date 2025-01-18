@@ -38,7 +38,10 @@
 #define G_CONST 9.81f                   // Constante De la gravité.
 
 // WIFI D1 Mini Data loggar shield
-#define CHIP_SELECT 10                  // Première fois avec un protocole SPI!
+#define SD_CS 5                         // Première fois avec un protocole SPI! Pin CS à définir selon dispo
+#define SD_SCK 18
+#define SD_MISO 19
+#define SD_MOSI  23
 #define CSV ".csv"
 
 #define JSON_FILE_PATH "/config.json"
