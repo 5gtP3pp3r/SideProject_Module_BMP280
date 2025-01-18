@@ -37,4 +37,8 @@
 #define MS2 "m/s²"                      // Accélération en mètre par seconde au carré. La gravité est une accélération constante de 9.81m/s² soit 1G.
 #define G_CONST 9.81f                   // Constante De la gravité.
 
+// WIFI D1 Mini Data loggar shield
+#define CHIP_SELECT 10                  // Première fois avec un protocole SPI!
+#define CSV ".csv"
+
 #define JSON_FILE_PATH "/config.json"
