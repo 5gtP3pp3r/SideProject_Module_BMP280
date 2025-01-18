@@ -1,17 +1,17 @@
 #pragma once
 #include <Arduino.h>
 #include <Wire.h>
-#include <Adafruit_BME280.h>
-#include <Adafruit_BMP280.h>
 #include <Adafruit_Sensor.h>
+#include <Adafruit_BMP280.h>
+
 #include "const.h"
 
-#define BMP_ADD 0x76
+#define BMP_ADD 0x76                    // SD0 sur GND. Si VCC: 0x77
 #define SEALEVELPRESSURE_HPA (1013.25)
-#define DEGRE "­°c"
-#define METRE " m"
-#define KPA " kPa"
-#define PERCENT " %" 
+#define DEGRE "°c"
+#define METRE "m"
+#define KPA "kPa"
+#define PERCENT "%" 
 #define KILOPASCAL 1000.0f
 
 // Le module que j'ai est un "semblant" de BMP280, il ne calcule que la température et la pression atmosphérique et peut donc aussi donner
