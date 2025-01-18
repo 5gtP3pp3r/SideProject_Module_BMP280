@@ -8,10 +8,8 @@ private:
     String m_temperature;
     String m_altitude;
     String m_presure;
-
     uint64_t m_lastReadTime;
     uint16_t m_interval;
-
     void getBMP280Values();
 public:
     Program();
