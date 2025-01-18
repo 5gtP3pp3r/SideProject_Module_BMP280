@@ -44,4 +44,6 @@
 #define SD_MOSI  23
 #define CSV ".csv"
 
+#define CSV_TELEMETRY_HEADER "time;temperature;altitude;pressure"   // Temporaire pour essait, à redéfinir   
+
 #define JSON_FILE_PATH "/config.json"
