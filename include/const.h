@@ -39,8 +39,8 @@
 
 // WIFI D1 Mini Data loggar shield
 #define SD_CS 5                         // Première fois avec un protocole SPI! Pin CS à définir selon dispo
-#define SD_SCK 18
-#define SD_MISO 19
+#define SD_SCK 18                          
+#define SD_MISO 19      //SDO
 #define SD_MOSI  23
 #define CSV ".csv"
 
