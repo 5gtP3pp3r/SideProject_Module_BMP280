@@ -23,10 +23,16 @@ private:
     float m_temperature;
     float m_altitude;
     float m_presure;
+    float m_maxTemperature;    
+    float m_maxPresure;
+    float m_maxAltitude;
+    float m_groundAltitude;
     Adafruit_BMP280 m_BMP280;
     uint64_t m_lastReadTime;
     uint16_t m_interval;
     void setMembresValues();
+    void setMaxValues();
+    void setGroundAltitude();
 public:
     BMP280Sensor();
     void tick();
@@ -36,4 +42,7 @@ public:
     float getTemperaturefloat();
     float getAltitudefloat();
     float getPresurefloat();
+    float getMaxTemperature();
+    float getMaxAltitude();
+    float getMaxPresure();
 };
