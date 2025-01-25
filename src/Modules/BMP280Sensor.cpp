@@ -7,7 +7,8 @@ BMP280Sensor::BMP280Sensor()
     m_altitude(DEFAULT_ZERO_F),                             // Pour afficher un altitude réel depuis le sol du lancement, devra créer une classe pour le clacul.  Prendre l'altitude
     m_presure(DEFAULT_ZERO_F),                              // stable avant le lancement, la conserver dans une données membre et relancer l'altitude moins la donnée enregistrée. 
     m_lastReadTime(DEFAULT_ZERO),                           // Comme ça l'altitude depuis le sol sera visible. Ou bien dans une donnée membre à l'intérieur de cette classe directement.
-    m_interval(INTERVAL_500) {                              // Pour l'instant, lecture au 1/2 seconde.          
+    m_interval(INTERVAL_500) {                              // Pour l'instant, lecture au 1/2 seconde.  
+        Wire.begin();        
         if (!m_BMP280.begin(BMP_ADD)) {                     // Simple vérification affiché dans le port série. A servi à détecter que je n'avais pas un BME mais un BMP.
             Serial.println("Incapable de démarrer le capteur BME280. Vérifiez l'adresse et le câblage.");
             while(true);                                    // La librairie de ADXL345 m'a montré que c'est une manière de créer une boucle infinie pour arrèter le programme sans cracher mais boucle dans le vide à l'infinie.

@@ -24,7 +24,7 @@
 #define INTERVAL_10 10
 
 // BMP280
-#define BMP_ADD 0x76                    // SD0 sur GND. Si VCC: 0x77
+#define BMP_ADD 0x76                    // SD0 sur GND. Si VCC: 0x77    hey ben si j'utilise Wire.begin pas besoin de pluger le SDO sur GND ou VCC ADD par défaut 0x76
 #define SEALEVELPRESSURE_HPA (1013.25)
 #define DEGRE "°c"
 #define METRE "m"
